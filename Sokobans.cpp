@@ -106,3 +106,6 @@ int totalLangkah = 0;
 
 
 //
+void gambarGame(){
+    
+}
