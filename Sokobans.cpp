@@ -67,7 +67,16 @@ int hitungKotakPas() {
 }
 
 
-
+bool cekMenang() {
+    for (int y = 0; y < TINGGI_PETA; y++) {
+        for (int x = 0; x < LEBAR_PETA; x++) {
+            if (petaSekarang[y][x] == 'B') {
+                return false;
+            }
+        }
+    }
+    return true;
+}
 
 
 
