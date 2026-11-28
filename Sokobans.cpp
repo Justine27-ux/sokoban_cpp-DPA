@@ -49,7 +49,22 @@ int totalLangkah = 0;
 
 
 //
+bool diDalamPeta(int x, int y) {
+    return x >= 0 && x < LEBAR_PETA && y >= 0 && y < TINGGI_PETA;
+}
 
+
+int hitungKotakPas() {
+    int pas = 0;
+    for (int y = 0; y < TINGGI_PETA; y++) {
+        for (int x = 0; x < LEBAR_PETA; x++) {
+            if (petaSekarang[y][x] == '*') {
+                pas++;
+            }
+        }
+    }
+    return pas;
+}
 
 
 
